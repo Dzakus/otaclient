@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:aboutapp="http://schemas.android.com/apk/res/com.lenovo.ota.client"
+     xmlns:aboutapp="http://schemas.android.com/apk/res/com.otaserver.client"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -86,7 +86,7 @@
 
 
 
-    <com.lenovo.ota.client.customwidget.AboutPromptView
+    <com.otaserver.client.customwidget.AboutPromptView
         android:id="@+id/aboutPromptView1"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/sdupdatepromptviewheight"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res/com.lenovo.ota.client"
+              xmlns:app="http://schemas.android.com/apk/res/com.otaserver.client"
     android:id="@+id/settingsLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <com.lenovo.ota.client.customwidget.SettingItemView
+        <com.otaserver.client.customwidget.SettingItemView
             android:id="@+id/setting_onlywifi"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/settings_item_height"
@@ -45,7 +45,7 @@
             app:textname="@string/onlywlan"
             app:textspec="@string/onlywlan_desc" />
 
-        <com.lenovo.ota.client.customwidget.SettingItemView
+        <com.otaserver.client.customwidget.SettingItemView
             android:id="@+id/setting_push"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/settings_item_height"
@@ -54,7 +54,7 @@
             app:textname="@string/push"
             app:textspec="@string/push_desc" />
 
-        <com.lenovo.ota.client.customwidget.SettingItemView
+        <com.otaserver.client.customwidget.SettingItemView
             android:id="@+id/setting_reminder"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/settings_item_height"
@@ -64,7 +64,7 @@
             app:textspec="@string/reminder_desc" />
     </LinearLayout>
 
-    <com.lenovo.ota.client.customwidget.ReminderLayout
+    <com.otaserver.client.customwidget.ReminderLayout
         android:id="@+id/reminderLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -208,7 +208,7 @@
                 android:text="一个月"
                 android:textColor="@android:color/black" />
         </LinearLayout>
-    </com.lenovo.ota.client.customwidget.ReminderLayout>
+    </com.otaserver.client.customwidget.ReminderLayout>
 
 
 

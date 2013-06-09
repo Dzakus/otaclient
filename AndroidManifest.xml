@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.lenovo.ota.client"
+      package="com.otaserver.client"
       android:versionCode="10"
       android:versionName="v1.2">
     <uses-sdk android:minSdkVersion="8" />
-<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
@@ -78,7 +78,7 @@
 		 	android:theme="@android:style/Theme.NoTitleBar">
 		</activity>
 
-    <receiver android:name="com.lenovo.ota.client.receiver.ClientReceiver">
+    <receiver android:name="com.otaserver.client.receiver.ClientReceiver">
 		<intent-filter>
 			<action android:name="rfus001"></action>
 		</intent-filter>
@@ -89,25 +89,25 @@
 
 	</receiver>
 	<!-- 
-    <receiver android:name="com.lenovo.ota.client.framework.DownloadService.downloadReceiver">
+    <receiver android:name="com.otaserver.client.framework.DownloadService.downloadReceiver">
 		<intent-filter>
-			<action android:name="com.lenovo.ota.client.download.start"></action>
+			<action android:name="com.otaserver.client.download.start"></action>
 		</intent-filter>
 		
 		<intent-filter>
-			<action android:name="com.lenovo.ota.client.download.pause"></action>
+			<action android:name="com.otaserver.client.download.pause"></action>
 		</intent-filter>
 		
 		<intent-filter>
-			<action android:name="com.lenovo.ota.client.download.stop"></action>
+			<action android:name="com.otaserver.client.download.stop"></action>
 		</intent-filter>
 
 		</receiver>
 	
 	 -->
-		<service android:name="com.lenovo.ota.client.framework.DownloadService" >
+		<service android:name="com.otaserver.client.framework.DownloadService" >
 		    <intent-filter android:priority="1000">
-                <action android:name="com.lenovo.ota.client.framework.DownloadService" />
+                <action android:name="com.otaserver.client.framework.DownloadService" />
 				
             </intent-filter>
 		</service>

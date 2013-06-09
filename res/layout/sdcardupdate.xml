@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sdupdateapp="http://schemas.android.com/apk/res/com.lenovo.ota.client" 
+    xmlns:sdupdateapp="http://schemas.android.com/apk/res/com.otaserver.client" 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
@@ -52,7 +52,7 @@
         android:paddingRight="10dip"
         android:paddingTop="10dip" >
 
-        <com.lenovo.ota.client.customwidget.SdUpdatePromptView
+        <com.otaserver.client.customwidget.SdUpdatePromptView
             android:id="@+id/sdUpdatePromptView1"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/sdupdatepromptviewheight"

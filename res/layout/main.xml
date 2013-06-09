@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/com.lenovo.ota.client"
+    xmlns:app="http://schemas.android.com/apk/res/com.otaserver.client"
     android:id="@+id/main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -60,12 +60,12 @@
             </LinearLayout>
         </LinearLayout>
 
-    <com.lenovo.ota.client.viewflow.ViewFlow
+    <com.otaserver.client.viewflow.ViewFlow
         android:id="@+id/viewflow"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="bottom"
         app:sidebuffer="3" >
-    </com.lenovo.ota.client.viewflow.ViewFlow>
+    </com.otaserver.client.viewflow.ViewFlow>
 
 </LinearLayout>
